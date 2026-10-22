@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flamengo | Paixão Rubro-Negra</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-color: #111;
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.82),
+                    rgba(0, 0, 0, 0.92)
+                ),
+                url("liberta.jpg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #a80000, #180000);
+            padding: 45px 20px;
+            text-align: center;
+            border-bottom: 4px solid red;
+        }
+
+        header h1 {
+            color: white;
+            font-size: clamp(30px, 5vw, 48px);
+            margin: 0;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        main {
+            width: 90%;
+            max-width: 850px;
+            margin: 35px auto;
+        }
+
+        section {
+            background: rgba(20, 20, 20, 0.94);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            border-left: 4px solid #d40000;
+            box-shadow: 0 5px 20px #00000055;
+        }
+
+        h2 {
+            color: #ff3333;
+            margin-top: 0;
+        }
+
+        .titulos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .ano {
+            background: #2a2a2a;
+            border: 1px solid #b00000;
+            padding: 18px 8px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .ano:hover {
+            background: #b00000;
+            transform: translateY(-5px);
+        }
+
+        .destaque {
+            text-align: center;
+            border: 2px solid #c90000;
+            border-left: 2px solid #c90000;
+            background: linear-gradient(145deg, #270000, #111);
+        }
+
+        .magico {
+            display: inline-block;
+            color: white;
+            background: #c90000;
+            text-decoration: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            animation: piscar 1.5s infinite;
+            transition: 0.3s;
+        }
+
+        .magico:hover {
+            background: #ff2020;
+            transform: scale(1.05);
+        }
+
+        @keyframes piscar {
+            0%, 100% {
+                box-shadow: 0 0 8px #ff0000;
+            }
+
+            50% {
+                box-shadow: 0 0 22px #ff0000;
+            }
+        }
+
+        footer {
+            background: #090909;
+            border-top: 2px solid #b00000;
+            text-align: center;
+            padding: 22px;
+            color: #ccc;
+        }
+
+        @media (max-width: 600px) {
+            .titulos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🔴⚫ FLAMENGO ⚫🔴</h1>
+        <p>Paixão que não se explica, se sente!</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>🏆 O orgulho da Nação</h2>
+
+            <p>
+                O Flamengo é um dos clubes mais populares do Brasil,
+                conhecido por sua história, suas conquistas e sua
+                torcida apaixonada, a Nação Rubro-Negra.
+            </p>
+
+            <p>
+                Vestir vermelho e preto é carregar uma paixão
+                que atravessa gerações!
+            </p>
+        </section>
+
+        <section>
+            <h2>🏆 Títulos da Libertadores</h2>
+
+            <p>As conquistas continentais do Mengão:</p>
+
+            <div class="titulos">
+                <div class="ano">1981</div>
+                <div class="ano">2019</div>
+                <div class="ano">2022</div>
+                <div class="ano">2025</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>❤️ Por que amamos o Flamengo?</h2>
+
+            <p>
+                São grandes jogadores, momentos inesquecíveis,
+                títulos históricos e uma torcida que nunca deixa
+                de apoiar o time.
+            </p>
+
+            <p>
+                Em 2025, o Flamengo conquistou sua quarta Libertadores,
+                tornando-se o primeiro clube brasileiro a alcançar
+                quatro títulos da competição.
+            </p>
+        </section>
+
+        <section class="destaque">
+            <h2>Uma vez Flamengo, sempre Flamengo!</h2>
+
+            <p>
+                2019 foi um ano que entrou para a história
+                e ficou guardado no coração da Nação.
+            </p>
+
+            <a href="2019.html" class="magico">
+                🏆 ANO MÁGICO
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>❤️🖤 Feito por uma torcedora apaixonada pelo Mengão!</p>
+        <p>Uma vez Flamengo, sempre Flamengo!</p>
+    </footer>
+
+</body>
+</html>
